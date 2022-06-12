@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Desafio 2 - Estruturas Lógicas e Condicionais</h1>
+        <p id="msg">Verificar o resultado do script no inspecionar, opção Console.</p>
+    
+        <h2> Prévia do resultado do Console</h2>
+        <form>
+            <fieldset>
+                <legend>Entrada de dados</legend>
+                <label>
+                    <p><span class="tipo">const</span> nome = "Charles"</p>
+                </label>
+                <label>
+                    <p><span class="tipo">const</span> idadeCharles = 17;</p>
+                </label>
+                <label>
+                    <p><span class="tipo">const</span> maiorIdade = 17 >=18;</p>
+                </label>
+                <label>
+                    <p><span class="tipo">const</span> mesNascimento = "Janeiro"</p>
+                </label>
+                <label>
+                    <p><span class="tipo">const</span> nome2 = "Ralf"</p>
+                </label>
+                <label>
+                    <p><span class="tipo">const</span> Ralf = 'R'</p>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Processamento</legend>
+                <label>
+                    <p class="pergunta">//1 - Crie uma condição que exiba uma mensagem no console se a idade for maior que 18</p>
+                    <p><span class="if-else">if</span> (idadeCharles >= 18) {</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`<span class="tipo">${nome}</span>, com a idade de <span class="tipo">${idadeCharles}</span>,\n Voce é maior de idade!`);</p>
+                    <p>} <span class="if-else">else</span> {</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`<span class="tipo">${nome}</span>, com a idade de <span class="tipo">${idadeCharles}</span>,\n Voce é menor de idade!`);</p>
+                    }<p></p>
+                </label>
+                <label>
+                    <p class="pergunta">//2 - Crie uma condição que exiba uma mensagem no console se você for maior de idade E a condição humana seja true</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`Eu me chamo <span class="tipo">${nome}</span> e sou menor de idade?\n <span class="tipo">${!maiorIdade}</span>`);</p>
+                </label>
+                <label>
+                    <p class="pergunta">//3 - Criar uma condição que exiba uma mensagem no console se você fizer aniversário em Janeiro OU Dezembro</p>
+                    <p><span class="if-else">if</span> ((mesNascimento === "Janeiro") || (mesNascimento === "Desembro")){</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`O mês de <span class="tipo">${mesNascimento}</span>, está entre Dezembro e Janeiro, dessa forma seu signo é Capricórnio`);</p>
+                    <p>} <span class="if-else">else</span> {</p>
+                    <p><span class="console">console</span><span class="log">.log</span>("Seu signo não está entre Dezembro e Janeiro, procure saber qual seu signo no Horóscopo");</p>
+                    }<p></p>
+                </label>
+                <label>
+                    <p class="pergunta">//4 - Criar uma condição que exiba uma mensagem no console se seu nome começar com a letra R</p>
+                    <p><span class="if-else">if</span> (Ralf === 'R') {</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`O nome <span class="tipo">${nome2}</span>, começa com a letra R`);</p>
+                    <p>} <span class="if-else">else</span> {</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`O nome <span class="tipo">${nome2}</span>, não começa com a letra R`);</p>
+                    }<p></p>
+                </label>
+                <label>
+                    <p class="pergunta">//4 - outra forma de resolução, usando a função toUpperCase</p>
+                    <p><span class="if-else">if</span> (Ralf.toUpperCase() == 'R') {</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`Usando a função toUpperCase \nVerifica-se que o nome <span class="tipo">${nome2}</span>, começa com a letra R`);</p>
+                    <p>} <span class="if-else">else</span> {</p>
+                    <p><span class="console">console</span><span class="log">.log</span>(`Usando a função toUpperCase \nVerifica-se que o nome <span class="tipo">${nome2}</span>, não começa com a letra R`);</p>
+                    }<p></p>
+                </label>
+            </fieldset>
+            <fieldset class="saida">
+                <legend>Saida de dados</legend>
+                <label>
+                    <p>Charles, com a idade de 17,</p>
+                    <p>Voce é menor de idade!</p>
+                    <hr>
+                </label>
+                <label>
+                    <p>Eu me chamo Charles e sou menor!</p>
+                    <p>true</p>
+                    <hr>
+                </label>
+                <label>
+                    <p>O mês de Janeiro, está entre Dezembro e Janeiro, dessa forma seu signo é Capricórnio</p>
+                    <hr>
+                </label>
+                <label>
+                    <p>O nome Ralf, começa com a letra R</p>
+                    <hr>
+                </label>
+                <label>
+                    <p>Usando a função toUpperCase</p>
+                    <p>Verifica-se que o nome Ralf, começa com a letra R</p>
+                    <hr>
+                </label>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

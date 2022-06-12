@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darksalmon;
+    background: fixed;
+    background-image: url(img/WhatsApp\ Image\ 2022-06-08\ at\ 18.09.30.jpeg);
+    background-size: 100%;    
+}
+h1,h2,#msg{
+    text-align: center;
+    padding-bottom: 2vw;
+    text-transform: uppercase;
+    color: cyan;
+}
+#msg {
+    color: #FFFFFF;
+    margin-bottom: 10vh;
+}
+form{
+    width: 70%;
+    height: 40vw;
+    position: relative;
+    left: 15%;
+    right: 15%;
+}
+fieldset{
+    padding: 0 2% 0 2%;
+    transition: all 0.6s;
+}
+fieldset:hover{
+    transform: scale(1.1,1);
+}
+legend{
+    text-align: center;
+    font-size: 1.8vw;
+    color: cornflowerblue;
+}
+p{
+    padding-top: 1vh;
+}
+.pergunta{
+    color: green;
+    margin-top: 2vh;;
+}
+p:hover{
+    box-shadow: 0.5px 0.5px 10px  white;
+}
+
+hr{
+    margin-bottom: 2vh;
+}
+.tipo{
+    color: cornflowerblue;
+}
+.console{
+    color: aquamarine;
+}
+.log{
+    color: darkkhaki;
+}
+.saida p{
+    color:#FFFFFF;
+}
+.if-else{
+    color: rgb(236, 92, 236);
+}
